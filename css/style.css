@@ -7,3 +7,35 @@
 body {
     background-color: #EAFCF4;
 }
+/* Carte de presentation */
+.card {
+    border: 2px solid rgb(190, 188, 186);
+    border-radius: none;
+    background-color: #EAFCF4;
+    }
+
+.card1{
+    border: 2px solid rgb(190, 188, 186);
+    border-radius: none;
+    margin-right: 30px;
+    
+}    
+
+.card2{
+    border: 2px solid rgb(190, 188, 186);
+    border-radius: none;
+    margin-right: 30px;
+}    
+
+.card3{
+    border: 2px solid rgb(190, 188, 186);
+    border-radius: none;
+    
+}
+/* style séance.php */
+.sec1{
+    font-size: 1.5rem;
+}
+.para{
+    font-size: 0.8rem
+}
