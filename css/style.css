@@ -1,0 +1,9 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+}
+
+/* REGLAGES GENEREAUX */
+body {
+    background-color: #EAFCF4;
+}
