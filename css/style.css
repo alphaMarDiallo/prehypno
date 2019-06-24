@@ -1,9 +1,40 @@
 /* RESET */
+
 * {
+
     box-sizing: border-box;
+
 }
 
 /* REGLAGES GENEREAUX */
+
 body {
+
     background-color: #EAFCF4;
 }
+.btn
+{
+    color: black;
+    background-color: #EAFCF4;
+}
+
+.hover:hover{
+    color: rgb(36, 116, 190);
+    box-shadow: -2px 2px 15px 0px rgba(0,0,0,0.75);
+    background-color: #EAFCF4;
+    border: 2rem grey;
+    transform: scale(1.2);
+}
+/* MENU */
+/* menu nav2 */
+
+
+
+/* MEDIA QUERRIES */
+@media screen and (max-width: 640px) {
+  .logo {
+    display:none;
+    clear:both;
+  }
+}
+
