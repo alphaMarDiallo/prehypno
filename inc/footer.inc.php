@@ -1,9 +1,11 @@
 </main> <!-- Fin main -->
 <footer class="row">
     <div class="col-md-12">
-        <a href="../lib/image/img/linkedin.png" class="col-md-4 btn"> <i class="fab fa-facebook-square"></i> </a>
-        <a href="../lib/image/img/facebook.png" class="col-md-4 btn"> <i class="fab fa-linkedin"></i> </a>
-        <a href="#" class="col-md-3 btn"> <i class="fab fa-twitter-square"></i> </a>
+        <ul class="nav justify-content-center">
+            <li><a href="#" class="col-md-2 btn"><i class="fab fa-facebook-square fa-2x hover rounded"></i></a></li>
+            <li><a href="#" class="col-md-2 btn "><i class="fab fa-linkedin-in fa-2x hover rounded"></i></a></li>
+            <li> <a href="#" class="col-md-2 btn "><i class="fab fa-twitter-square fa-2x hover rounded"></i></a></li>
+        </ul>      
     </div>
 </footer><!-- Fin footer -->
 
@@ -22,3 +24,4 @@
 </body>
 
 </html>
+<?php require_once 'header.inc.php'?>
