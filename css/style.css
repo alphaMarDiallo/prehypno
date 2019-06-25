@@ -7,3 +7,8 @@
 body {
     background-color: #EAFCF4;
 }
+/* page RDV*/
+
+ul li{
+    list-style: none;
+}
