@@ -19,45 +19,55 @@
 </head>
 
 <body>
-<div class="container">
-    <header class="row">
-        <nav class="navbar navbar-expand-lg navbar-light logo" id="nav1">
-  <!-- le logo signature -->
-            <img src="../img/logoFavIconAlpha.png " alt="" class="m-4"> 
-    <button class="navbar-toggler m-4" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item mt-4"> 
-          <p>23 rue de la folie Méricourt</p>
-          <p>75011 Paris</p>
-      </li>
-      <li class="nav-item m-4 mb-2">2eme adresse</li>
-      <li class="nav-item text text-center mt-4">
-         <p>Hypno-thérapeute</p>
-          <p>humaniste</p>
-      </li>
-      <li class="nav-item text text-center">
-        <a href="#" class="nav-link rounded-pill btn hover mt-3">Prendre un RDV</a>
-      <li class="nav-item m-4">
-        <a class="nav-link" href="#" >07 01 02 03 01</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-<nav id="nav2">
-    <ul>
-      <li><a href="#">Qui</a></li>
-      <li><a href="#">Seance</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Temoignage</a></li>
-    </ul>
-    <a class="toggle-nav" href="#"></a>
+<div class="container"><!-- debut div Classcontainer -->
+  <header class="row"><!-- Debut class header -->
+        <nav class="navbar navbar-expand-lg navbar-light logo"><!-- Debut navbar collaps -->
+           <img src="../img/logoFaviconAlpha.png" alt="">
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
 
-</nav>
-<main class="row">
+           <div class="collapse navbar-collapse" id="navbarNav"><!-- Debut nav collaps -->
 
+             <ul class="navbar-nav mt-4"><!-- debut ul -->
+               <li class="nav-item active">
+                 <a class="nav-link"><p>23 rue de la folie Méricourt</p>
+                 <p>75011 Paris</p></a>
+               </li>
 
+               <li class="nav-item active">
+                 <a class="nav-link"><p>23 rue de la folie Méricourt</p>
+                 <p>75011 Paris</p></a>
+               </li>
+               
+               <li class="nav-item">
+                 <a class="nav-link"><p>Hypno-thérapeute</p>
+                 <p>humaniste</p></a>
+               </li>
 
-<?php require_once 'footer.inc.php'?>
+               <li class="nav-item">
+                 <a class="nav-link" href="#"><span class="border border-light rounded-pill btn hover">Prendre un RDV</span></a>
+               </li>
+
+               <li class="nav-item">
+                 <a class="nav-link" ><span class="border border-light rounded-pill btn hover">07 01 02 03 01</span></a>
+               </li><!-- dFin ul -->
+           </div><!-- fin nav collaps -->
+           
+        </nav><!-- fin navbar collaps --> 
+      </div><!-- fin divClasscontainer -->
+            <!-- ma 2éme Nav qui sera appelé Jquery   -->
+      <div class="row">
+        <nav id="nav2">
+            <ul class=>
+              <li><a href="#" ><span class="border border-light rounded-pill btn hover" class="rounded-pill">Qui</span></a></li>
+              <li><a href="#" ><span class="border border-light rounded-pill btn hover" class="rounded-pill">Seance</span></a></li>
+              <li><a href="#" ><span class="border border-light rounded-pill btn hoer"  class="rounded-pill">Blog</span></a></li>
+              <li><a href="#" ><span class="border border-light rounded-pill btn hover" class="rounded-pill">Temoignage</span></a></li>
+            </ul>
+            <span class="navbar-toggler-icon"></span>
+       </nav>
+    </div>
+
+  </header><!-- fin class header -->
+<?php require_once 'footer.inc.php' ?>
