@@ -49,10 +49,10 @@
             <!-- Fin des paragraphes -->
 
             <div class="row"><!-- Début class Row -->
-                <a href="#"  class="col-md-2 m-3 btn rounded-pill hover display">Qui</a>
-                <a href="#"  class="col-md-2 m-3 btn rounded-pill hover display">Séance</a>
-                <a href="#"  class="col-md-2 m-3 btn rounded-pill hover display">Témoignages</a>
-                <a href="#"  class="col-md-2 m-3 btn rounded-pill hover display">Blog</a>
+                <a href="qui.php?page=qui"  class="col-md-2 m-3 btn rounded-pill hover display">Qui</a>
+                <a href="seance.php?page=seance"  class="col-md-2 m-3 btn rounded-pill hover display">Séance</a>
+                <a href="temoignages.php?page=temoignage"  class="col-md-2 m-3 btn rounded-pill hover display">Témoignages</a>
+                <a href="blog.php?page=blog"  class="col-md-2 m-3 btn rounded-pill hover display">Articles</a>
             </div><!-- Fin row bouttons -->
 
         </div><!-- Fin de col-md-10 (titres & paragraphes)-->
