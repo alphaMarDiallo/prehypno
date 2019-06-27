@@ -1,23 +1,22 @@
 <?php require_once 'inc/header.inc.php' ?>
 <div class="row">
 <h3 class=" col-md-12 m-5">Dérouler d'une séance :</h3>
-<img src="img/cabinet.jpg" class="rounded-circle col-md-4 mt-5" style="height:30vh;">
-    <section class="sec1 col-md-8 mt-5">
-    <p>Nous commencerons par un entretien au cours duquel nous définirons ensemble votre ou vos
-        objectif et la maniére de les atteindredurablement. Je vous accompagne toujours avec
-        bienveillance et respect, sans jugement et de maniére personnalisée.
+<img src="img/cabinet.jpg" class="image rounded-circle col-md-4 mt-5" style="height:40vh;">
+<section class="sec1 col-md-8  mt-5">
+    <p>Nous commencerons par un échange au cours duquel nous définirons ensemble votre ou vos objectifs et la manière de les atteindre durablement. Je vous accompagne toujours avec bienveillance et respect, sans jugement et de manière personnalisée. 
     </p><br>
-    <p>S'ensuivant une ou plusieurs séances avec état modifié de conscience, vous ne risquerez absolument
-        rien et ne ferez rien que vous n'auriez pas envie de
-        faire, loin de perdre le controle, vous vous souviendrez de tout, vous parlerez et interagirez avec moi
+    <p>S’ensuivront une ou plusieurs séances, vous ne ferez rien que vous n’auriez pas envie de faire, loin de perdre le contrôle, vous vous souviendrez de tout, vous parlerez et interagirez avec moi durant la séance. Je vous accompagnerai grâce au son de ma voix, à mes mots et à de la musique.
     </p><br>
-    <p>Le nombre de séances est variable mais il s'agit de thérapie bréve. En fonction des situations et des 
-        personnes, je pourrais étre amenée a vous proposer des 
-        << petits exercices >> a faire entre nos séances. 
-        </p><br>
-        <p>Une séance dure en moyenne 1h15, la premiére peut durer un peu plus longtemps.</p>
-    </section>
-    <p class="para offset-md-8 mt-5 ">
-       << Fais de ta vie un réve, une réalité >> Antoine de saint-Exupery 
+    <p>Votre confiance ainsi que votre participation sont alors nécessaires car il n’y a que vous qui puissiez changer les choses. Sans perte de contrôle, dans une collaboration mutuelle, à travers des symboles, des sensations ou des intuitions en lien avec ce que vous souhaitez changer, nous tisserons étape par étape la trame jusqu’à atteindre l’objectif que vous vous étiez fixé.
+    </p><br>
+    <p>L’état hypnotique garantit l’efficacité du soin et la mise en place du nouveau comportement. Ce n’est pas de l’hypnose de spectacle mais bien de l’hypnose thérapeutique.
+    </p><br>
+    <p>Le nombre de séances est variable mais il s’agit de thérapie brève. En fonction des situations et des personnes, je pourrais être amenée à vous proposer des « petits exercices » à faire entre nos séances.
+    </p><br>
+    <h2>Je n'attends plus que vous !</h2>
+    </p>
+</section>
+<p class="para offset-md-8 mt-5 ">
+    << Fais de ta vie un réve, une réalité >> Antoine de saint-Exupery 
 </div> 
 <?php require_once 'inc/footer.inc.php' ?>

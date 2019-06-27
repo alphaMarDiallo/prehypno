@@ -7,3 +7,12 @@
 body {
     background-color: #EAFCF4;
 }
+/* Carte de presentation */
+
+.card-body, .list-group-item, .list-group-flush,p {
+    background-color: #EAFCF4 !important;
+}
+div.card-body{
+    background-color:  #EAFCF4 !important;
+   
+}
