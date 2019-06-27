@@ -4,7 +4,7 @@ $(document).ready(function()
     
    //On place tout notre code jQuery 
    /*On cachera les élements possedant un attribut class='para' */
-    $('#nav2').hide();
+    $('#navbarsecondaire').hide();
 
     
 });// Fin de $(document).ready(function(){}

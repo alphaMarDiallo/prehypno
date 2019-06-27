@@ -21,7 +21,7 @@
 <body>
 <div class="container"><!-- debut div Classcontainer -->
   <header class="row"><!-- Debut class header -->
-        <nav class="navbar navbar-expand-lg navbar-light logo"><!-- Debut navbar collaps -->
+        <nav class="navbar navbar-expand-lg navbar-light logo" id="navbarPrimaire"><!-- Debut navbar collaps -->
            <img src="../img/logoFaviconAlpha.png" alt="">
            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
              <span class="navbar-toggler-icon"></span>
@@ -50,7 +50,7 @@
                </li>
 
                <li class="nav-item">
-                 <a class="nav-link" ><span class="border border-light rounded-pill btn hover">07 01 02 03 01</span></a>
+                 <a class="nav-link">07 01 02 03 01</span></a>
                </li><!-- dFin ul -->
            </div><!-- fin nav collaps -->
            
@@ -58,16 +58,49 @@
       </div><!-- fin divClasscontainer -->
             <!-- ma 2éme Nav qui sera appelé Jquery   -->
       <div class="row">
-        <nav id="nav2">
-            <ul class=>
-              <li><a href="#" ><span class="border border-light rounded-pill btn hover" class="rounded-pill">Qui</span></a></li>
-              <li><a href="#" ><span class="border border-light rounded-pill btn hover" class="rounded-pill">Seance</span></a></li>
-              <li><a href="#" ><span class="border border-light rounded-pill btn hoer"  class="rounded-pill">Blog</span></a></li>
-              <li><a href="#" ><span class="border border-light rounded-pill btn hover" class="rounded-pill">Temoignage</span></a></li>
-            </ul>
-            <span class="navbar-toggler-icon"></span>
-       </nav>
-    </div>
+        <nav class="container-fluid navbar navbar-inverse navbar-expand-lg navbar-fixed-bottom navbar-light logo" id="navbarSecondaire">
+    <!-- Debut navbar collaps -->
+    <img src="../img/logoFaviconAlpha.png" alt="">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-align-center" id="navbarNav">
+        <!-- Debut nav collaps -->
+
+        <ul class="navbar-nav mt-4">
+            <!-- debut ul -->
+            <li class="nav-item active ml-2">
+                <a class="nav-link "><span class="border border-light rounded-pill btn hover">L'hypnose pour qui ?</span></a>
+            </li>
+
+            <li class="nav-item active ml-2">
+                <a class="nav-link"><span class="border border-light rounded-pill btn hover">Déroulé d'une séance</span></a>
+            </li>
+
+            <li class="nav-item ml-2">
+                <a class="nav-link"><span class="border border-light rounded-pill btn hover">Articles</span></a>
+            </li>
+            <li class="nav-item ml-2">
+                <a class="nav-link"><span class="border border-light rounded-pill btn hover">Anne-Cecile ROUGIER</span></a>
+            </li>
+
+            <li class="nav-item ml-2">
+                <a class="nav-link" href="#"><span class="border border-light rounded-pill btn hover">Prendre un RDV</span></a>
+            </li>
+
+            <li class="nav-item ml-4">
+                <a class="nav-link">07 01 02 03 01</span></a>
+            </li><!-- dFin ul -->
+    </div><!-- fin nav collaps -->
+
+</nav><!-- fin navbar collaps -->
+      </div>
+<!-- --------------------------------------------------------------- -->
+        
+
+<!-- --------------------------------------------------------------- -->
 
   </header><!-- fin class header -->
 <?php require_once 'footer.inc.php' ?>

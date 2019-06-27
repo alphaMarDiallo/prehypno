@@ -33,189 +33,27 @@ body {
   border-radius: 50% !important; 
 } 
 /* MENU */
-/* menu nav2 */
+/* menu navbarPrimaire et navBarSecondaire */
 
 
 
 /* MEDIA QUERRIES */
-/* @media screen and (max-width: 640px) {
-  .logo {
-    display:none;
-    clear:both;
-  }
-} */
-.div{
-    background: red;
-    color: #fff;
-    padding: 10px;
-}
-
-@media all and (max-width: 640px) {
-
- .head{
-
-   display:none;
-
-   clear:both;
-
- }
-
-/* }@media all and (max-width: 640px) {
-
- #nav2 {
-
-   display:inline;
-
-   clear:both;
-
- }
-
-} */
-
-/*MEDIA QUERIES permettent de ré-arranger la disposition du site en fonction des tailles de navigateurs en px - cf. viewportsizes.com -3 tailles suffisent. On peut faire une feuille de style standard et une CSS rien que pour le RESPONSIVE de base la zone est rouge, si l'écran est de plus de 768px et jusqu'à 992px la zone est orange...*/
-/*
-@media(max-width: 500px){
-    header{
-        height: 6vh;
-        background:violet;
-    }
-    nav{
-        height: 3vh;
-        background:rgb(14, 187, 240);
-    }
-    .m1, .m2, .m3, .m4{
-        height: 20vh;
-        width: 86vh;
-        margin: 0 auto;
-    }
-
-    .m1{
-        background:#B4AF91;
-    }
-    .m2{
-        background:#046380;
-    }
-    .m3{
-        background:#F6E497;
-    }
-    .m4{
-        background:#B5E655;
-    }
-    footer{
-        height: 6vh;
-        background:#8E3557;
-    }
-}
-@media(max-width: 768px){
-    header{
-        height: 7vh;
-        background:purple;
-    }
-    nav{
-        height: 3.5vh;
-        background:rgb(14, 187, 240);
-    }
-    .m1, .m2, .m3, .m4{
-        height: 20vh;
-        float: left;
-    }
-
-    .m1{
-        background:#B4AF91;
-    }
-    .m2{
-        background:#046380;
-    }
-    .m3{
-        background:#F6E497;
-    }
-    .m4{
-        background:#B5E655;
-    }
-    footer{
-        height: 7vh;
-        background:#8E3557;
-
-    }
-}
-@media(max-width: 992px){
-    header{
-        height: 8vh;
-        background:purple;
-    }
-    nav{
-        height: 4vh;
-        background:rgb(14, 187, 240);
-    }
-    .m1, .m2, .m3, .m4{
-        height: 30vh;
-        float: left;
-    }
-
-    .m1{
-        background:#B4AF91;
-    }
-    .m2{
-        background:#046380;
-    }
-    .m3{
-        background-size: url('../Image/image.jpg');
-    }
-    .m4{
-        background:#B5E655;
-    }
-    footer{
-        height: 8vh;
-        background: #792579;
-
-    }
-}
-@media(max-width: 1200px){
-    header{
-        height: 9vh;
-        background:purple;
-    }
-    nav{
-        height: 4.5vh;
-        background:#73ADCE;
-    }
-    .m1, .m2, .m3, .m4{
-        height: 40vh;
-        float: left;
-    }
-
-    .m1{
-        background:-moz-linear-gradient(to left, green, pink);
-    }
-    .m2{
-        background:#73ADCE;
-    }
-    .m3{
-        background:#F6E497;
-    }
-    .m4{
-        background:#B5E655;
-    }
-    footer{
-        height: 9vh;
-        background: #791527;
-
-    }
-}
-
-section{
-    margin: 1.5vh;
-}
-
-.clear{
-    clear: both;
-}
-
-
-
-
-*/
-/* .facebook
+/* Seule la navBarSecondaire est appelée à disparaitre lorsque l'écran est compris entre ]1200 ->[ */
+@media(min-width: 1200px)
 {
-  width: 25px!important;
-} */
+    #navbarSecondaire
+    {
+        display: none;
+    }
+
+}
+
+
+/* Seule la navBarPrimaire est appelée à disparaitre lorsque l'écran est compris entre ]<- 1200[ */
+@media(max-width: 1200px)
+{
+    #navbarPrimaire
+    {
+        display: none;
+    }
+}
