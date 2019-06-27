@@ -19,17 +19,16 @@
 </head>
 
 <body>
-<div class="container"><!-- debut div Classcontainer -->
-  <header class="row"><!-- Debut class header -->
-        <nav class="navbar navbar-expand-lg navbar-light logo" id="navbarPrimaire"><!-- Debut navbar collaps -->
+<div class="container">
+  <header class="row">
+    <!-- NavbarPrimaire -->
+        <nav class="navbar navbar-expand-lg navbar-light logo" id="navbarPrimaire">
            <img src="../img/logoFaviconAlpha.png" alt="">
            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
              <span class="navbar-toggler-icon"></span>
            </button>
-
-           <div class="collapse navbar-collapse" id="navbarNav"><!-- Debut nav collaps -->
-
-             <ul class="navbar-nav mt-4"><!-- debut ul -->
+           <div class="collapse navbar-collapse" id="navbarNav">
+             <ul class="navbar-nav mt-4">
                <li class="nav-item active">
                  <a class="nav-link"><p>23 rue de la folie Méricourt</p>
                  <p>75011 Paris</p></a>
@@ -51,56 +50,48 @@
 
                <li class="nav-item">
                  <a class="nav-link">07 01 02 03 01</span></a>
-               </li><!-- dFin ul -->
-           </div><!-- fin nav collaps -->
-           
-        </nav><!-- fin navbar collaps --> 
-      </div><!-- fin divClasscontainer -->
-            <!-- ma 2éme Nav qui sera appelé Jquery   -->
-      <div class="row">
-        <nav class="container-fluid navbar navbar-inverse navbar-expand-lg navbar-fixed-bottom navbar-light logo" id="navbarSecondaire">
-    <!-- Debut navbar collaps -->
-    <img src="../img/logoFaviconAlpha.png" alt="">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse text-align-center" id="navbarNav">
-        <!-- Debut nav collaps -->
-
-        <ul class="navbar-nav mt-4">
-            <!-- debut ul -->
-            <li class="nav-item active ml-2">
-                <a class="nav-link "><span class="border border-light rounded-pill btn hover">L'hypnose pour qui ?</span></a>
-            </li>
-
-            <li class="nav-item active ml-2">
-                <a class="nav-link"><span class="border border-light rounded-pill btn hover">Déroulé d'une séance</span></a>
-            </li>
-
-            <li class="nav-item ml-2">
-                <a class="nav-link"><span class="border border-light rounded-pill btn hover">Articles</span></a>
-            </li>
-            <li class="nav-item ml-2">
-                <a class="nav-link"><span class="border border-light rounded-pill btn hover">Anne-Cecile ROUGIER</span></a>
-            </li>
-
-            <li class="nav-item ml-2">
-                <a class="nav-link" href="#"><span class="border border-light rounded-pill btn hover">Prendre un RDV</span></a>
-            </li>
-
-            <li class="nav-item ml-4">
-                <a class="nav-link">07 01 02 03 01</span></a>
-            </li><!-- dFin ul -->
-    </div><!-- fin nav collaps -->
-
-</nav><!-- fin navbar collaps -->
+               </li>
+           </div>   
+        </nav><!-- fin #navbarPrimaire --> 
       </div>
-<!-- --------------------------------------------------------------- -->
-        
+      <div class="row">
+        <!-- NavbarSecondaire -->
+        <nav class="container-fluid navbar navbar-inverse navbar-expand-lg navbar-fixed-bottom navbar-light logo" id="navbarSecondaire">
+          <img src="../img/logoFaviconAlpha.png" alt="">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-<!-- --------------------------------------------------------------- -->
+            <div class="collapse navbar-collapse text-align-center" id="navbarNav">
+                <ul class="navbar-nav mt-4">    
+                  <li class="nav-item active ml-2">
+                    <a class="nav-link "><span class="border border-light rounded-pill btn hover">L'hypnose pour qui ?</span></a>
+                  </li>
 
+                  <li class="nav-item active ml-2">
+                    <a class="nav-link"><span class="border border-light rounded-pill btn hover">Déroulé d'une séance</span></a>
+                  </li>
+
+                  <li class="nav-item ml-2">
+                    <a class="nav-link"><span class="border border-light rounded-pill btn hover">Articles</span></a>
+                  </li>
+                  <li class="nav-item ml-2">
+                    <a class="nav-link"><span class="border border-light rounded-pill btn hover">Anne-Cecile ROUGIER</span></a>
+                  </li>
+
+                  <li class="nav-item ml-2">
+                    <a class="nav-link" href="#"><span class="border border-light rounded-pill btn hover">Prendre un RDV</span></a>
+                  </li>
+
+                  <li class="nav-item ml-4">
+                    <a class="nav-link">07 01 02 03 01</span></a>
+                  </li>
+              </div>
+          </nav><!-- fin #navbarSecondaire -->
+      </div>
   </header><!-- fin class header -->
-<?php require_once 'footer.inc.php' ?>
+
+
+
+  
