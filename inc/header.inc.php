@@ -25,7 +25,7 @@
             <div class="col-md-2">23 rue de la folie Méricourt 75011</div>
             <div class="col-md-2">2eme adresse</div>
             <div class="col-md-2">Hypno-thérapeute humaniste</div>
-            <a href="#" class="col-md-2">Prise de RDV</a>
-            <div class="col-md-2">07 01 02 03 01</div>
+            <a href="#" class="col-md-2 hover">Prise de RDV</a>
+            <div class="col-md-2 hover">07 01 02 03 01</div>
         </header><!-- Fin header -->
         <main class="row">
