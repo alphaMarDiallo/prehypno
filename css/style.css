@@ -16,3 +16,10 @@ div.card-body{
     background-color:  #EAFCF4 !important;
    
 }
+p.list-group-item{
+    border: none;
+}
+
+li{
+    list-style: none;
+}

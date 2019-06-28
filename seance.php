@@ -1,8 +1,8 @@
 <?php require_once 'inc/header.inc.php' ?>
 <div class="row">
 <h3 class=" col-md-12 m-5">Dérouler d'une séance :</h3>
-<img src="img/cabinet.jpg" class="image rounded-circle col-md-4 mt-5" style="height:40vh;">
-<section class="sec1 col-md-8  mt-5">
+<img src="img/cabinet_150px.jpg" class="img-cabinet rounded-circle col-md-4 mt-5">
+<section class="sec1 col-md-8 text-justify  mt-5">
     <p>Nous commencerons par un échange au cours duquel nous définirons ensemble votre ou vos objectifs et la manière de les atteindre durablement. Je vous accompagne toujours avec bienveillance et respect, sans jugement et de manière personnalisée. 
     </p><br>
     <p>S’ensuivront une ou plusieurs séances, vous ne ferez rien que vous n’auriez pas envie de faire, loin de perdre le contrôle, vous vous souviendrez de tout, vous parlerez et interagirez avec moi durant la séance. Je vous accompagnerai grâce au son de ma voix, à mes mots et à de la musique.
@@ -13,10 +13,10 @@
     </p><br>
     <p>Le nombre de séances est variable mais il s’agit de thérapie brève. En fonction des situations et des personnes, je pourrais être amenée à vous proposer des « petits exercices » à faire entre nos séances.
     </p><br>
-    <h2>Je n'attends plus que vous !</h2>
+    <h4>Je n'attends plus que vous !</h4>
     </p>
 </section>
-<p class="para offset-md-8 mt-5 ">
+<p class="para offset-md-8 mt-5">
     << Fais de ta vie un réve, une réalité >> Antoine de saint-Exupery 
 </div> 
-<?php require_once 'inc/footer.inc.php' ?>
+<?php require_once 'inc/footer.inc.php'?>
