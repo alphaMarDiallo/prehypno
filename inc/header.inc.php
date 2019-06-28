@@ -21,11 +21,79 @@
 <body>
     <div class="container">
         <header class="row">
-            <div class="col-md-2">logo</div>
-            <div class="col-md-2">23 rue de la folie Méricourt 75011</div>
-            <div class="col-md-2">2eme adresse</div>
-            <div class="col-md-2">Hypno-thérapeute humaniste</div>
-            <a href="#" class="col-md-2 hover">Prise de RDV</a>
-            <div class="col-md-2 hover">07 01 02 03 01</div>
-        </header><!-- Fin header -->
-        <main class="row">
+            <!-- NavbarPrimaire -->
+            <nav class="navbar navbar-expand-lg navbar-light logo" id="navbarPrimaire">
+                <img src="img/logoFaviconAlpha.png" alt="logo">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mt-4">
+                        <li class="nav-item active">
+                            <a class="nav-link">
+                                <p>23 rue de la folie Méricourt</p>
+                                <p>75011 Paris</p>
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link">
+                                <p>23 rue de la folie Méricourt</p>
+                                <p>75011 Paris</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link">
+                                <p>Hypno-thérapeute</p>
+                                <p>humaniste</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><span
+                                    class="border border-light rounded-pill btn hover">Prendre un RDV</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">07 01 02 03 01</span></a>
+                        </li>
+                </div>
+            </nav><!-- fin #navbarPrimaire -->
+    </div>
+    <div class="row">
+        <!-- NavbarSecondaire -->
+        <nav class="container-fluid navbar navbar-inverse navbar-expand-lg navbar-fixed-bottom navbar-light logo"
+            id="navbarSecondaire">
+            <img src="../img/logoFaviconAlpha.png" alt="flêche retour">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-align-center" id="navbarNav">
+                <ul class="navbar-nav mt-4">
+                    <li class="nav-item active ml-2">
+                        <a class="nav-link "><span class="border border-light rounded-pill btn hover">L'hypnose pour qui
+                                ?</span></a>
+                    </li>
+                    <li class="nav-item active ml-2">
+                        <a class="nav-link"><span class="border border-light rounded-pill btn hover">Déroulé d'une
+                                séance</span></a>
+                    </li>
+                    <li class="nav-item ml-2">
+                        <a class="nav-link"><span class="border border-light rounded-pill btn hover">Articles</span></a>
+                    </li>
+                    <li class="nav-item ml-2">
+                        <a class="nav-link"><span class="border border-light rounded-pill btn hover">Anne-Cecile
+                                ROUGIER</span></a>
+                    </li>
+                    <li class="nav-item ml-2">
+                        <a class="nav-link" href="#"><span class="border border-light rounded-pill btn hover">Prendre un
+                                RDV</span></a>
+                    </li>
+                    <li class="nav-item ml-4">
+                        <a class="nav-link">07 01 02 03 01</span></a>
+                    </li>
+            </div>
+        </nav><!-- fin #navbarSecondaire -->
+    </div>
+    </header><!-- fin class header -->
+    <main class="row">
