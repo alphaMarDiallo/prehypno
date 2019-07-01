@@ -8,6 +8,14 @@ body {
   background-color: #EAFCF4;
 }
 
+section {
+  padding: 50px;
+}
+
+p {
+  text-align: justify;
+}
+
 /* HEADER & FOOTER */
 .rounded :hover {
   width: 150px !important;
@@ -16,20 +24,14 @@ body {
   border-radius: 50% !important;
 }
 
-/* MENU */
 /* menu navbarPrimaire et navBarSecondaire */
-
-
-
 /* MEDIA QUERRIES */
 /* Seule la navBarSecondaire est appelée à disparaitre lorsque l'écran est compris entre ]1200 ->[ */
 @media(min-width: 1200px) {
   #navbarSecondaire {
     display: none;
   }
-
 }
-
 
 /* Seule la navBarPrimaire est appelée à disparaitre lorsque l'écran est compris entre ]<- 1200[ */
 @media(max-width: 1200px) {
@@ -43,9 +45,6 @@ body {
 .hover:hover {
   color: black;
   background-color: #EAFCF4;
-}
-
-.hover:hover {
   color: rgb(36, 116, 190);
   box-shadow: -2px 2px 15px 0px rgba(0, 0, 0, 0.75);
   background-color: #EAFCF4;
@@ -63,9 +62,7 @@ body {
   }
 }
 
-@media all and (max-width: 640px) {
-  .hover {
-    display: none;
-    clear: both;
-  }
+/************** TEMOIGNAGES **************/
+.card {
+  background-color: #EAFCF4;
 }

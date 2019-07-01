@@ -63,7 +63,7 @@
         <!-- NavbarSecondaire -->
         <nav class="container-fluid navbar navbar-inverse navbar-expand-lg navbar-fixed-bottom navbar-light logo"
             id="navbarSecondaire">
-            <img src="../img/logoFaviconAlpha.png" alt="flêche retour">
+            <a href="#"><i class="fas fa-reply"></i></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
