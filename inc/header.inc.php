@@ -1,3 +1,4 @@
+<?php require_once 'inc/init.inc.php' ?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -23,7 +24,13 @@
         <header class="row">
             <!-- NavbarPrimaire -->
             <nav class="navbar navbar-expand-lg navbar-light logo" id="navbarPrimaire">
-                <img src="img/logoFaviconAlpha.png" alt="logo">
+                <?php
+                if (!isset($_GET['page'])) {
+                    echo '<img src="img/logoFaviconAlpha.png" alt="photo-profil">';
+                } elseif (isset($_GET['page']) && $_GET['page'] == 'qui' || $_GET['page'] == 'seance' || $_GET['page'] == 'temoignages' || $_GET['page'] == 'articles' || $_GET['page'] == 'prez') {
+                    echo '<a href="#"><i class="fas fa-reply fa-1x"></i></a>';
+                }
+                ?>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -63,7 +70,7 @@
         <!-- NavbarSecondaire -->
         <nav class="container-fluid navbar navbar-inverse navbar-expand-lg navbar-fixed-bottom navbar-light logo"
             id="navbarSecondaire">
-            <a href="#"><i class="fas fa-reply"></i></a>
+            <img src="img/logoFaviconAlpha.png" alt="logo">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>

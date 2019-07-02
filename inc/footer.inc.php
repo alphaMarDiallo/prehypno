@@ -1,13 +1,13 @@
 </main> <!-- Fin main -->
-<footer class="row">
-    <div class="col-md-12">
+<footer class="footer mt-auto p-3y">
+    <div class="container">
         <ul class="nav justify-content-center">
-            <li><a href="#" class="col-md-4 col-lg-4 col-sm-12 col-xs-12 btn"><i
-                        class="fab fa-facebook-square fa-3x hover rounded"></i></a></li>
-            <li><a href="#" class="col-md-4 col-lg-4 col-sm-12 col-xs-12 btn "><i
-                        class="fab fa-linkedin-in fa-3x hover rounded"></i></a></li>
-            <li><a href="#" class="col-md-4 col-lg-4 col-sm-12 col-xs-12 btn "><i
-                        class="fab fa-twitter-square fa-3x hover rounded"></i></a></li>
+            <li><a href="#" class="col-md-4 col-lg-4 col-sm-12 col-xs-12 btn"><img src="img/f_logo_RGB-Hex-Blue_512.png"
+                        alt="logo-facebook" class="face hover"></a></li>
+            <li><a href="#" class="col-md-4 col-lg-4 col-sm-12 col-xs-12 btn"><img src="img/linkedin.png"
+                        alt="logo-linkedin" class="twit hover"></a></li>
+            <li><a href="#" class="col-md-4 col-lg-4 col-sm-12 col-xs-12 btn"><img src="img/twitter.png" r
+                        alt="logo-twitter" class="link hover"></a></li>
         </ul>
     </div>
 </footer><!-- Fin footer -->

@@ -4,7 +4,8 @@
 
     <!-- PP de la Thérapeute -->
     <div class="col-md-2 display mt-3 display">
-        <a href="prez.php"><img src="img/pp.png" class="img-thumbnail rounded-circle hover" alt="photo profil"></a>
+        <a href="prez.php?page=prez"><img src="img/pp.png" class="img-thumbnail rounded-circle hover"
+                alt="photo profil"></a>
 
         <p> Anne-Cécile ROUGIER <br> Hypno-thérapeute </p>
     </div><!-- Fin col-md-2 -->
@@ -60,17 +61,17 @@
 
             NB : certaines mutuelles prennent en charge un certain nombre de séances par an, renseignez-vous ! Toute
             séance non-annulée 48h à l'avance est due.
-            <em></em>
         </p>
         <!-- Fin des
                 paragraphes -->
 
         <div class="row">
             <!-- Début class Row -->
-            <a href="#" class="col-md-2 m-3 btn rounded-pill hover display">Qui</a>
-            <a href="#" class="col-md-2 m-3 btn rounded-pill hover display">Séance</a>
-            <a href="#" class="col-md-2 m-3 btn rounded-pill hover display">Témoignages</a>
-            <a href="#" class="col-md-2 m-3 btn rounded-pill hover display">Blog</a>
+            <a href="prez.php?page=qui" class="col-md-2 m-4 btn rounded-pill hover display">Qui</a>
+            <a href="seance.php?page=seance" class="col-md-2 m-4 btn rounded-pill hover display">Séance</a>
+            <a href="temoignages.php?page=temoignages"
+                class="col-md-2 m-4 btn rounded-pill hover display">Témoignages</a>
+            <a href="articles.php?page=articles" class="col-md-2 m-4 btn rounded-pill hover display">Articles</a>
         </div><!-- Fin row bouttons -->
 
     </div><!-- Fin de col-md-10 (titres & paragraphes)-->
