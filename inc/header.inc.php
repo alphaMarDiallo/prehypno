@@ -27,7 +27,7 @@
                 <?php
                 if (!isset($_GET['page'])) {
                     echo '<img src="img/logoFaviconAlpha.png" alt="photo-profil">';
-                } elseif (isset($_GET['page']) && $_GET['page'] == 'qui' || $_GET['page'] == 'seance' || $_GET['page'] == 'temoignages' || $_GET['page'] == 'articles' || $_GET['page'] == 'prez') {
+                } elseif (isset($_GET['page']) && $_GET['page'] == 'qui' || $_GET['page'] == 'seance' || $_GET['page'] == 'temoignages' || $_GET['page'] == 'formTemoignage' || $_GET['page'] == 'articles' || $_GET['page'] == 'prez') {
                     echo '<a href="#"><i class="fas fa-reply fa-1x"></i></a>';
                 }
                 ?>
