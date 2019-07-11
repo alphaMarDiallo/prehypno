@@ -51,19 +51,18 @@ if ($_POST) // si on valide le formulaire, on entre dans le IF
         <div class="row">
             <div class="form-group col-md-4 ">
                 <?php echo  $msgFirstName; ?>
-                <input type="text" class="form-control rounded-pill" id="tFirstName" name="tFirstName"
-                    placeholder="Prénom">
+                <input type="text" class="form-control rounded-pill bg-form" name="tFirstName" placeholder="Prénom">
             </div>
             <!-- Fin case prénom -->
             <div class="form-group col-md-4">
                 <?php echo $msgLastName; ?>
-                <input type="text" class="form-control rounded-pill" id="tLastName" name="tLastName" placeholder="Nom">
+                <input type="text" class="form-control rounded-pill bg-form" name="tLastName" placeholder="Nom">
             </div>
             <!-- Fin case nom -->
         </div>
         <div class="row">
             <div class="form-group col-md-8">
-                <textarea class="form-control" id="testimony" name="testimony" rows="6"></textarea>
+                <textarea class="form-control bg-form" name=" testimony" rows="6"></textarea>
                 <?php echo $msgtestimony; ?>
             </div>
         </div>

@@ -28,7 +28,7 @@
                 if (!isset($_GET['page'])) {
                     echo '<img src="img/logoFaviconAlpha.png" alt="photo-profil">';
                 } elseif (isset($_GET['page']) && $_GET['page'] == 'qui' || $_GET['page'] == 'seance' || $_GET['page'] == 'temoignages' || $_GET['page'] == 'formTemoignage' || $_GET['page'] == 'articles' || $_GET['page'] == 'prez') {
-                    echo '<a href="#"><i class="fas fa-reply fa-1x"></i></a>';
+                    echo '<a href="#"><i class="fas fa-arrow-alt-circle-left fa-2x m-5"></i></a>';
                 }
                 ?>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -57,11 +57,15 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><span
-                                    class="border border-light rounded-pill btn hover">Prendre un RDV</span></a>
+                            <a class="nav-link" href="rdv.php"><span
+                                    class="border border-light rounded-pill btn hover">Prendre
+                                    un RDV</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link">07 01 02 03 01</span></a>
+                            <span class="nav-link">07 01 02 03 01</span>
+                        </li>
+                        <li class="nav-item">
+                            <a href="admin/connexion.php" class="nav-link admin">admin</span></a>
                         </li>
                 </div>
             </nav><!-- fin #navbarPrimaire -->
@@ -103,4 +107,6 @@
         </nav><!-- fin #navbarSecondaire -->
     </div>
     </header><!-- fin class header -->
+    <a href="admin/connexion.php">
+        <hr></a>
     <main class="row">

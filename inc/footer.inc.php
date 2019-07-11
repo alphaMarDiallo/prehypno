@@ -1,6 +1,6 @@
 </main> <!-- Fin main -->
 <footer class="footer mt-auto p-3y">
-    <div class="container">
+    <div class="container mt-5">
         <ul class="nav justify-content-center">
             <li><a href="#" class="col-md-4 col-lg-4 col-sm-12 col-xs-12 btn"><img src="img/f_logo_RGB-Hex-Blue_512.png"
                         alt="logo-facebook" class="face hover"></a></li>

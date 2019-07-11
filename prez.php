@@ -1,5 +1,5 @@
 <?php require_once 'inc/header.inc.php' ?>
-<div class="container">
+<div class="container offset-md-3">
     <div class="row">
         <div class="col-md-3 mt-2">
             <img src="img/pp.png" class="image-anne" alt="photo-profil">

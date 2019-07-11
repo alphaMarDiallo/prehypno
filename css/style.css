@@ -37,10 +37,21 @@ em {
 }
 
 /*************************************** HEADER & FOOTER ***************************************/
-header {
+/* header {
   border-bottom: 2px solid black;
   box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
+} */
+
+hr {
+  width: 75rem;
+  border: 1px solid #d3d3d3;
 }
+
+a hr {
+  cursor: default;
+}
+
+
 
 /*  */
 aside>p>i {
@@ -100,15 +111,8 @@ footer ul li .twit {
 
 }
 
-/* footer>li>a>.hover:hover:before {
+/* bouton admin */
 
-}
-
-footer>li>a:before {
-  background-color: #000;
-
-
-} */
 
 
 
@@ -142,6 +146,11 @@ footer>li>a:before {
 
 /************** TEMOIGNAGES **************/
 .card {
+  background-color: #EAFCF4;
+}
+
+/************** FORM_TEMOIGNAGE **************/
+.bg-form {
   background-color: #EAFCF4;
 }
 
