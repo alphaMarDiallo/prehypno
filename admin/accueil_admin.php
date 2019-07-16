@@ -22,23 +22,36 @@ if (isset($_GET['action']) && $_GET['action'] == 'deconnexion') {
 </head>
 
 <body>
-    <h1 class="text-center">Accueil admin</h1>
-    <a href="?action=deconnexion" class="admin-btn btn-danger rounded-pill offset-10">Deconnexion</a>
+    <a href="?action=deconnexion" class="admin-btn btn-danger rounded-pill offset-10 mt-2
+    ">Deconnexion</a>
+    <h1 class="text-center mb-5">Accueil admin :</h1>
     <div class="container">
-        <div class="card offset-2 mt-5" style="width: 50rem;">
+        <!-- <div class="card cardAdmin offset-md-2" style="width:30rem;">
             <ul class="list-group list-group-flush">
-                <a href="gestion_article.php">
-                    <li class="secondary list-group-item text-center btn-outline-secondary hover">Gestion des articles
-                    </li>
-                </a>
-                <a href="gestion_clients.php">
-                    <li class="info list-group-item text-center btn-outline-info hover">Gestion des clients</li>
-                </a>
-                <a href="gestion_temoignage.php">
-                    <li class="primary list-group-item text-center btn-outline-primary hover">Gestion des temoignages
-                    </li>
-                </a>
+                <li class="secondary list-group-item text-center  hover">
+                    <a href="gestion_article.php" class="btn-outline-secondary">Gestion des articles</a>
+                </li>
+                <li class="info list-group-item text-center  hover">
+                    <a href=" gestion_clients.php" class="btn-outline-info">Gestion des clients</a>
+                </li>
+                <li class="primary list-group-item text-center hover">
+                    <a href="gestion_temoignage.php" class="btn-outline-primary ">Gestion des temoignages</a>
+                </li>
             </ul>
+        </div> -->
+        <div class="list-group listAdmin " style="width:30rem;">
+            <a href="gestion_article.php"
+                class="list-group-item list-group-item-action secondary text-center hover btn-outline-secondary">Gestion
+                des
+                articles</a>
+            <a href="gestion_clients.php"
+                class="list-group-item list-group-item-action info text-center btn-outline-info hover">Gestion
+                des clients</a>
+            <a href="gestion_temoignage.php"
+                class="list-group-item list-group-item-action primary text-center btn-outline-primary  hover">Gestion
+                des
+                temoignages</a>
+
         </div>
     </div>
 

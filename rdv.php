@@ -11,6 +11,10 @@ $birthDateError = '';
 $villeError = '';
 $emailError = '';
 $msgValidate = '';
+$dateError = '';
+$timeError = '';
+
+
 
 
 if ($_POST) {
@@ -20,11 +24,11 @@ if ($_POST) {
         $firstNameError .= '<small class="text-danger"> ** Saisissez un prenom entre 2 et 60 clastéres</small>';
     }
     if (empty($lastName) || iconv_strlen($lastName) < 2 ||  iconv_strlen($lastName) > 60) {
-        $lastNameError .= '<small class="text-danger"> ** Saisissez un prenom entre 2 et 60 caractéres</small>';
+        $lastNameError .= '<small class="text-danger"> ** Saisissez un Nom entre 2 et 60 caractéres</small>';
     }
 
     if (empty($adress) || iconv_strlen($adress) < 4 ||  iconv_strlen($adress) > 60) {
-        $adressError .= '<small class="text-danger"> ** Saisissez un prenom entre 4 et 100 caractéres</small>';
+        $adressError .= '<small class="text-danger"> ** Saisissez une Adresse entre 4 et 100 caractéres</small>';
     }
     if (empty($zipCode) || !preg_match('#^[0-9]{5}+$#', $zipCode)) {
         $zipCodeError .= '<small class="text-danger"> ** saisissez un code-postal valide</small>';
@@ -38,6 +42,10 @@ if ($_POST) {
 
     if (empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $emailError .= '<small class="text-danger"> ** Votre email n\'est pas valide</small>';
+
+        if (empty($birthDate) || !preg_match('#^([0-9]{2})/([0-9]{2})/([0-9]{4})$#', ['birthDate'])) {
+            $birthDateError .= '<small class="text-danger"> ** Votre date n\'est pas valide</small>';
+        }
     }
     // Insertion en base de données
     if (empty($firstNameError) && empty($lastNameError) && empty($adressError) && empty($zipCodeError) && empty($countryError) && empty($phoneError) && empty($emailError)) {
@@ -46,7 +54,7 @@ if ($_POST) {
             $_POST[$indice] = htmlspecialchars($valeur, ENT_QUOTES);
         }
         // Requete d'insertion 
-        $newClient = $bdd->prepare("INSERT INTO clients(firstName, lastName, adress, zipCode, country, phone, email) VALUES (:firstName, :lastName, :adress, :zipCode, :country, :phone, :email)");
+        $newClient = $bdd->prepare("INSERT INTO clients(firstName, lastName, birthDate, adress, zipCode, country, phone, email, date_rdv, time_rdv) VALUES (:firstName, :lastName, :birthDate, :adress, :zipCode, :country, :phone, :email, :date_rdv, :time_rdv)");
 
         // foreach($_POST as $key => $value)
         // {
@@ -54,13 +62,15 @@ if ($_POST) {
         // }
         $newClient->bindValue(":firstName", $firstName, PDO::PARAM_STR);
         $newClient->bindValue(":lastName", $lastName, PDO::PARAM_STR);
+        $newClient->bindValue(":birthDate", $birthDate, PDO::PARAM_INT);
         $newClient->bindValue(":adress", $adress, PDO::PARAM_STR);
         $newClient->bindValue(":country", $country, PDO::PARAM_STR);
         $newClient->bindValue(":email", $email, PDO::PARAM_STR);
         $newClient->bindValue(":phone", $phone, PDO::PARAM_INT);
         $newClient->bindValue(":zipCode", $zipCode, PDO::PARAM_INT);
+        $newClient->bindValue(":date_rdv", $date_rdv, PDO::PARAM_INT);
+        $newClient->bindValue(":time_rdv", $time_rdv, PDO::PARAM_INT);
         $newClient->execute();
-
         $msgValidate = '<div class="alert alert-success">votre prise de rendez-vous  à bien été enregistré. </div>';
     }
 } // Fin du if($_POST)
@@ -127,6 +137,19 @@ if ($_POST) {
 
                 </div>
             </div>
+
+
+
+            <!-- Prendre rendez-vous -->
+            <label for="start">Choissisez votre date de rdv</label>
+            <input class="col mt-2" type="date" id="start" name="date_rdv" value="2019-09-22" min="2019-01-01"
+                max="2039-12-31">
+            <!-- Fin de la ligne calendrier -->
+
+            <label for="appt">Choissisez l'heure</label>
+            <input class="col mt-2" type="datetime-local" id="appt" name="time_rdv" value="9:00" min="9:00" max="18:00">
+            <small>Office hours are 9am to 6pm</small>
+
             <input type="submit" class="text-center btn-block btn-success rounded-pill m-1" value="Envoyer">
         </form>
         <!--FIN form RDV-->

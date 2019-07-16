@@ -27,7 +27,7 @@
                 <?php
                 if (!isset($_GET['page'])) {
                     echo '<img src="img/logoFaviconAlpha.png" alt="photo-profil">';
-                } elseif (isset($_GET['page']) && $_GET['page'] == 'qui' || $_GET['page'] == 'seance' || $_GET['page'] == 'temoignages' || $_GET['page'] == 'formTemoignage' || $_GET['page'] == 'articles' || $_GET['page'] == 'prez') {
+                } elseif (isset($_GET['page']) && $_GET['page'] == 'qui' || $_GET['page'] == 'seance' || $_GET['page'] == 'temoignages' || $_GET['page'] == 'formTemoignage' || $_GET['page'] == 'articles' || $_GET['page'] == 'prez' || $_GET['page'] == 'rdv') {
                     echo '<a href="#"><i class="fas fa-arrow-alt-circle-left fa-2x m-5"></i></a>';
                 }
                 ?>
@@ -64,9 +64,6 @@
                         <li class="nav-item">
                             <span class="nav-link">07 01 02 03 01</span>
                         </li>
-                        <li class="nav-item">
-                            <a href="admin/connexion.php" class="nav-link admin">admin</span></a>
-                        </li>
                 </div>
             </nav><!-- fin #navbarPrimaire -->
     </div>
@@ -97,7 +94,8 @@
                                 ROUGIER</span></a>
                     </li>
                     <li class="nav-item ml-2">
-                        <a class="nav-link" href="#"><span class="border border-light rounded-pill btn hover">Prendre un
+                        <a class="nav-link" href="rdv.php?page=rdv"><span
+                                class="border border-light rounded-pill btn hover">Prendre un
                                 RDV</span></a>
                     </li>
                     <li class="nav-item ml-4">

@@ -14,8 +14,8 @@ while ($temoignage = $resultat->fetch(PDO::FETCH_ASSOC)) {
     $contenu .= '<td scope="col" class="text-center">' . $temoignage['tFirstName'] . '</td>';
     $contenu .= '<td scope="col" class="text-center">' . $temoignage['tLastName'] . '</td>';
     $contenu .= '<td scope="col" class="text-center">' . $temoignage['testimony'] . '</td>';
-    $contenu .= '<td scope="col" class="text-center"><a href="?action=suppression&id=' . $temoignage['idTestimony'] . '"><i
-                class="fas fa-trash-alt fa-2x text-danger"></i></a></td>';
+    $contenu .= '<td  scope="col" class="text-center"><a href="?action=suppression&id=' . $temoignage['idTestimony'] . '" onclick="return confirm(\'Etes-vous sûr ?\');"><i
+    class="fas fa-trash-alt fa-2x text-danger"></i></a></td>';
     $contenu .= '</tr>';
 }
 
@@ -52,12 +52,10 @@ if (isset($_GET['action']) && $_GET['action'] == 'suppression' && isset($_GET['i
 
 <body>
     <div class="container mt-5">
-        <h1 class="text-center">Témoignage</h1>
-        <a href="accueil_admin.php" class="return" title="retour"><i
+        <h1 class="text-center mb-5">Témoignage</h1>
+        <a href="accueil_admin.php" class="return mb-5" title="retour"><i
                 class="fas fa-hand-point-left fa-2x text-dark"></i></a>
-        <a class="offset-11 mb-5 btn btn-outline-dark" href="connexion.php" title="ajouter un Témoignage"><i
-                class="fas fa-pencil-alt fa-2x"></i></a>
-        <table class="table table-bordered">
+        <table class="table table-dark mt-5">
             <thead>
                 <tr>
                     <th scope="col" class="text-center">N° temoignage</th>

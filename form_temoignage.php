@@ -42,7 +42,6 @@ if ($_POST) // si on valide le formulaire, on entre dans le IF
     }
 }
 ?>
-
 <a href="temoignages.php"><i class="fas fa-reply"></i></a>
 <div class="container mt-5 offset-4">
     <!-- Formulaire témoignages  -->

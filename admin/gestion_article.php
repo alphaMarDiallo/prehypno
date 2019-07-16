@@ -5,9 +5,7 @@ $contenu = "";
 
 // $resultat -> me permet de récuperer ma table article. $resultat n'est pas exploitable dans l'etat.
 $resultat = $bdd->query("SELECT * FROM articles");
-echo '<pre>';
-print_r($resultat);
-echo '</pre>';
+
 // La boucle while qui veut dire "tant qu'il y a", permet de parcourir toutes les lignes de mon tableau article. La variable "$art", elle me permet de recuperer toutes les informations de mon tableau article. En crochetant "$art['indice que je souhaite utiliser']"
 while ($art = $resultat->fetch(PDO::FETCH_ASSOC)) {
     // echo '<pre>'; print_r($art); echo '</pre>';
@@ -18,7 +16,8 @@ while ($art = $resultat->fetch(PDO::FETCH_ASSOC)) {
     $contenu .= '<td class="text-center">' . $art['photo'] . '</td>';
     $contenu .= '<td class="text-center">' . $art['link'] . '</td>';
     $contenu .= '<td class="text-center"><a href="form_article.php?action=modif"><i class="far fa-edit text-warning fa-2x"></i></a></td>';
-    $contenu .= '<td class="text-center"><a href="?action=suppression&id=' . $art['idArticle'] . '"><i class="fas fa-trash-alt text-danger fa-2x"></i></a></td>'; //<td><a href="?action=suppression +(&id=')-> $art['idArticle'] qui permet de recuperer l'id de l'article
+    $contenu .= '<td  scope="col" class="text-center"><a href="?action=suppression&id=' . $art['idArticle'] . '" onclick="return confirm(\'Etes-vous sûr ?\');"><i
+    class="fas fa-trash-alt fa-2x text-danger"></i></a></td>';
     $contenu .= '</tr>';
 }
 
@@ -63,10 +62,19 @@ if (isset($_GET['action']) && $_GET['action'] == 'suppression' && isset($_GET['i
     <div class="container">
 
         <h1 class="display-4 text-center"> Liste des articles</h1>
-        <a href="accueil_admin.php" class="return" title="retour"><i
-                class="fas fa-hand-point-left fa-2x text-dark"></i></a>
-        <a class="offset-11 mb-5 btn btn-outline-dark" href="form_article.php" title="ajouter un article"><i
-                class="fas fa-pencil-alt fa-2x"></i></a>
+
+        <div class="row">
+            <div class="col-md-6">
+                <a href="accueil_admin.php" class="return btn btn-outline-dark" title="retour">
+                    <i class="far fa-hand-point-left fa-2x"></i>
+                </a>
+            </div>
+            <div class="col-md-6">
+                <a class="offset-10 mb-5 btn btn-outline-dark" href="form_article.php" title="ajouter un RDV">
+                    <i class="fas fa-pencil-alt fa-2x"></i>
+                </a>
+            </div>
+        </div>
         <table class="table table-dark">
             <thead>
                 <tr>
