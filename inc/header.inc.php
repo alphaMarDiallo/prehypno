@@ -15,6 +15,9 @@
     <!-- Lien CDN bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--BS PICKERDATE -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css" />
     <!-- Lien CSS personel -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -57,7 +60,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="rdv.php"><span
+                            <a class="nav-link" href="rdv.php?page=rdv"><span
                                     class="border border-light rounded-pill btn hover">Prendre
                                     un RDV</span></a>
                         </li>

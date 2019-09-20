@@ -77,7 +77,7 @@
             <!-- Fin des
                 paragraphes -->
         </div>
-        <div class="row">
+        <div class="container offset-2">
             <!-- Début class Row -->
 
             <a href="qui.php?page=qui" class="col-md-2 m-4 btn rounded-pill hover display">Qui</a>

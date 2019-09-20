@@ -91,7 +91,6 @@ if ($_POST) {
                     <?php echo $lastNameError; ?>
                     <input type="text" name="lastName" class="form-control  text-center rounded-pill m-1"
                         placeholder="Nom">
-                    <label for="lastName">Nom</label>
                 </div>
             </div>
             <div class="row">
@@ -137,18 +136,16 @@ if ($_POST) {
 
                 </div>
             </div>
-
-
-
-            <!-- Prendre rendez-vous -->
-            <label for="start">Choissisez votre date de rdv</label>
-            <input class="col mt-2" type="date" id="start" name="date_rdv" value="2019-09-22" min="2019-01-01"
-                max="2039-12-31">
-            <!-- Fin de la ligne calendrier -->
-
-            <label for="appt">Choissisez l'heure</label>
-            <input class="col mt-2" type="datetime-local" id="appt" name="time_rdv" value="9:00" min="9:00" max="18:00">
-            <small>Office hours are 9am to 6pm</small>
+            <!-- SELECT DATE & TIME -->
+            <div style="overflow:hidden;">
+                <div class="form-group offset-2 mt-5 mb5-">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div id="datetimepicker13"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <input type="submit" class="text-center btn-block btn-success rounded-pill m-1" value="Envoyer">
         </form>
